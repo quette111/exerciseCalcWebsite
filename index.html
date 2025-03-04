@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body onload="typeWriter()">
+       
+    <div id="headerForPage" class="header">
+        <div id="innerHeaderForPage" class="innerHeader">
+            <div id="logoContainForPage" class="logoContainer">
+                    <label onclick="darkMode()" class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                <h1>LIFT<span>LOGIC</span></h1>
+            </div>
+
+            <ul class="navigation">
+                <a href="index.html"><li id="homE">Home</li></a>
+                <a href="poCalc.html"><li>Calculators</li></a>
+                <a href="exerciseDB.html"><li>Exercise Database</li></a>
+                <a href="gymCalc.html"><li>About</li></a>
+                <a><li>Contact</li></a>
+                <a><button class="button-33" role="button">Sign up</button></a>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div id="myLiftingImg" class="imgContainer">
+        <div id="overlay"></div>
+    <img src="css/assets/liftingImg.jpg" height="100">
+    </div>
+<div class="dropdownWrapper">
+
+    <div id="articleHead" class="headOfArticle">
+        <div class="firstDropdownSection">
+        <button class="calc">Calculators</button>
+        <div class="dropdown-content">
+            <a href="poCalc.html">Progressive Overload Calculator</a>
+            <a href="#">One Rep Max Calculator</a>
+            <a href="#">Strength Level Calculator</a>
+          </div>
+</div>
+        <button onclick="scrollToForum()">Learn More</button>
+        <button>Training Log</button>
+
+    </div>
+
+</div>    
+
+    <div id="article" class="article">
+        <h2>
+            Join the LiftLogic community and connect with like-minded lifters.<br> Share your progress, ask questions, and get advice from experienced athletes. Whether you're looking for tips on form, program recommendations, or motivation, our forum is the place to be.
+        </h2>
+    </div>
+
+    <div onmouseover='showDelete()' id="floatingModel">
+        <div onmouseover='showDelete()' id="clearX" >
+        <button onclick="clearModel()" id='deleteImg' src="delete.png">X</button>
+        </div>
+    <img onmouseover='showDelete()'  class="person" src="person.png">
+    <div onmouseover='showDelete()' id="float"></div>
+
+</div>
+
+
+<h1 class="learnMore"><img class="bulb1" src="bulb.png">Learn More!<img class="bulb" src="bulb.png"></h1> 
+   
+    <div class="pOInfo" onclick="scrollAbility()" style="background-image:url(css/assets/noisy.png);">
+       <div id="fadeWrapper">
+        <div class="whatIs">
+        <h2><span class='bold'>What is Progressive Overload?</span><br>
+                Progressive overload is the foundation of strength training and muscle growth. It involves gradually increasing the demands placed on your muscles over time to continually challenge them and stimulate adaptation. Without progressive overload, your body has no reason to grow stronger or build muscle.
+        </div>        <br>
+        </h2>
+        <h2>
+                <span class='bold'>Why is Progressive Overload Important?</span><br>
+                <span class='boldLess'>Muscle Growth:</span> <br>To build muscle, you need to create micro-tears in muscle fibers, which then repair and grow stronger. Progressive overload ensures this process continues.
+                </h2>
+                <h2>
+                <span class='boldLess'> Strength Gains:</span><br> By consistently increasing the load, your nervous system adapts, allowing you to lift heavier weights.
+                </h2>
+                <h2>
+                <span class='boldLess'> Preventing Plateaus:</span><br> Without progressive overload, your progress will stall, and you’ll hit a plateau.
+                </h2>
+                <h2>
+                <span class='boldLess'> Efficiency:</span> <br>It ensures your workouts remain effective and time-efficient.
+            </h2>
+
+            <div class="section2">
+        <h2>
+                <span class='bold'>
+                How to Apply Progressive Overload</span> <br>
+                There are several ways to implement progressive overload in your training:
+        </h2>       
+        <h2>
+            <span class='bold'>    Increase Weight: </span>
+                
+                Gradually add more weight to your lifts. For example, if you’re bench pressing 100 lbs for 3 sets of 10 reps, try increasing to 105 lbs.
+        </h2>   
+        <h2>    
+        <span class='bold'>Increase Reps:</span>
+               
+                Add more repetitions to your sets. If you’re squatting 150 lbs for 3 sets of 8 reps, aim for 3 sets of 10 reps before increasing the weight.
+        </h2>
+        <h2>
+                <span class='bold'>        Increase Sets:</span>
+                
+                Add an extra set to your workout. For example, go from 3 sets to 4 sets of the same exercise.
+        </h2>
+        <h2>        
+                <span class='bold'>       Improve Form:</span>
+                
+                Better technique allows you to lift more efficiently and safely, which can lead to increased strength over time.
+        </h2>  
+        <h2>     
+                <span class='bold'>       Decrease Rest Time:</span>
+                
+                Shorten the rest periods between sets to increase intensity. For example, reduce rest from 90 seconds to 60 seconds.
+        </h2>
+        <h2>        
+                <span class='bold'>       Increase Training Frequency:</span>
+                
+                Train a muscle group more often. For example, if you’re training legs once a week, increase it to twice a week.
+       </h2>  
+       <h2>       
+            <span class='bold'>        Use Advanced Techniques:</span>
+             
+                Incorporate techniques like drop sets, supersets, or tempo training to increase intensity.</h2>
+    </div>
+    Example of Progressive Overload in Action
+Let’s say you’re working on your bench press:
+
+Week 1: 100 lbs, 3 sets of 8 reps.
+
+Week 2: 100 lbs, 3 sets of 10 reps.
+
+Week 3: 105 lbs, 3 sets of 8 reps.
+
+Week 4: 105 lbs, 3 sets of 10 reps.
+
+Week 5: 110 lbs, 3 sets of 8 reps.
+
+By gradually increasing the weight and reps, you’re applying progressive overload and ensuring continuous progress.
+
+
+
+Common Mistakes to Avoid
+Increasing Too Quickly:
+
+Adding too much weight or volume too soon can lead to injury. Progress should be gradual and sustainable.
+
+Ignoring Recovery:
+
+Progressive overload requires proper recovery, including sleep, nutrition, and rest days.
+
+Neglecting Form:
+
+Sacrificing form for heavier weights increases the risk of injury and reduces effectiveness.
+
+Not Tracking Progress:
+
+Use a workout log or app (like LiftLogic) to track your lifts and ensure you’re progressing over time.
+
+
+
+
+Progressive Overload and Nutrition
+To support progressive overload, your body needs proper fuel:
+
+Protein: Essential for muscle repair and growth. Aim for 0.8–1.2 grams of protein per pound of body weight.
+
+Carbohydrates: Provide energy for intense workouts. Include complex carbs like oats, rice, and potatoes.
+
+Fats: Support hormone production and overall health. Include healthy fats like avocados, nuts, and olive oil.
+
+Hydration: Stay hydrated to maintain performance and recovery.
+
+Progressive Overload for Beginners vs. Advanced Lifters
+Beginners: Can progress quickly due to "newbie gains." Focus on mastering form and gradually increasing weight or reps.
+
+Advanced Lifters: Progress may slow down. Use advanced techniques like periodization, micro-loading, or varying rep ranges.
+
+
+
+How LiftLogic Helps with Progressive Overload
+Workout Logging: Track your lifts, sets, and reps to monitor progress.
+
+Personalized Recommendations: Get suggestions for weight increases based on your performance.
+
+Progress Analytics: Visualize your strength gains over time with charts and graphs.
+
+Community Support: Share your progress and get feedback from other lifters.
+
+
+
+Progressive overload is the key to unlocking your strength and muscle-building potential. At LiftLogic, we make it easy to apply this principle to your training. Log your workouts, track your progress, and let our app guide you with personalized recommendations. Whether you’re aiming to increase your bench press, squat, or deadlift, LiftLogic is here to help you push your limits and achieve your goals.
+
+
+
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+
+@keyframes slide-in1 {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0; /* Optional: Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at the original position */
+        opacity: 0.80; /* Optional: Fade in */
+    }
+}
+@keyframes slide-in2 {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0; /* Optional: Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at the original position */
+        opacity: 0.8; /* Optional: Fade in */
+    }
+}
+
+#eDB{
+    color: rgb(252, 207, 111);
+}
+
+#list li{
+    padding: 2%;
+    border: 0.5px black solid;
+    position: relative;
+    left: -20%;
+    margin-top: 2%;
+}
+
+#exSlide{
+  
+    font-family: "Nabla";
+    font-palette: --myPalette;
+    position: relative;
+    left: 10%;
+    animation-duration: 1.5s;
+    animation-name: slide-in1;
+}
+#pageTitle{
+   opacity: 0.80;
+    top: 500%;
+    position: absolute;
+    right: 10%;
+    font-weight: 100;
+    font-size: 700%;
+    font-family: "Nabla";
+    font-palette: --myPalette;
+    animation-duration: 1.5s;
+    animation-name: slide-in1;
+
+}
+#dataBase{
+    font-family: "Nabla";
+    font-palette: --myPalette;
+    position: relative;
+    left: 50%;
+    animation-duration: 1.5s;
+    animation-name: slide-in2;
+}
+@font-palette-values --myPalette {
+    font-family: "Nabla";
+    base-palette: 3;
+  }
+
+
+
+select{
+    position: absolute;
+    top: 13%;
+    left: 60%;
+    height: 4.5%;
+    background:#0099ff;
+color:white;
+font: 'trebuchet ms', trebuchet;
+padding:10px 20px;
+border-radius:0 10px 10px 0;
+-moz-border-radius:0 10px 10px 0;
+-webkit-border-radius:0 10px 10px 0;
+-o-border-radius:0 10px 10px 0;
+border:0 none;
+font-weight:bold;
+}
+
+#searchWrapper{
+    position: absolute;
+    top: 13%;
+    left: 25%;
+}
+
+
+
+#search{
+    background: #eee;
+padding:10px;
+ border-radius:10px 0 0 10px;
+-moz-border-radius:10px 0 0 10px;
+-webkit-border-radius:10px 0 0 10px;
+-o-border-radius:10px 0 0 10px;
+border:0 none;
+width:500px;
+}

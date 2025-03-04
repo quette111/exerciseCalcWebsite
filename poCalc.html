@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/poCalc.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="innerHeader">
+        <div class="logoContainer">
+          <h1>LIFT<span>LOGIC</span></h1>
+        </div>
+
+        <ul class="navigation">
+            <a href="index.html"><li id="homE">Home</li></a>
+            <a href="poCalc.html"><li id="calcS">Calculators</li></a>
+            <a href="exerciseDB.html"><li>Exercise Database</li></a>
+            <a href="gymCalc.html"><li>About</li></a>
+          <a><li>Contact</li></a>
+          <a><button class="button-33" role="button">Sign up</button></a>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="calcWrapper">
+        
+      <div class="calculator">
+        <label for="level-select">Choose your level:</label>
+
+        <select name="level" id="level-select">
+          <option value="">--Please choose a level--</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+        <select name="level" id="level-select2">
+                <option value="">--Please choose a workout--</option>
+                <option value="Squat">Squat</option>
+                <option value="Deadlift">Deadlift</option>
+                <option value="Bench Press">Bench Press</option>
+                <option value="Overhead Press">Overhead Press</option>
+                <option value="Barbell Row">Barbell Row</option>
+                <option value="Pull/Chin up">Pull/Chin up</option>
+              </select>
+        <input id="weightInteger" type="number" placeholder="current weight used" /><select id="buttonPadding"
+          name="level"
+          id="level-select"
+          ><option value="">--lbs or kg--</option
+          ><option value="lbs">lb</option>
+          <option value="kg">Kg</option>
+        </select>
+        <button onclick="calculatePo()" class="button-86" role="button">CALCULATE</button>
+      </div>
+
+      <div class="pInfo">
+        <h2>
+          <span id="spanLabel">Beginners:</span><br />
+          If you are new to strength training, you can often increase the weight
+          by about 5-10% each week, depending on the lift and your comfort
+          level.<br />
+        </h2>
+        <h2>
+          <span id="spanLabel">Intermediate:</span> <br />For those with some
+          experience, a more moderate increase of about 2.5-5% per week is
+          typical.<br />
+        </h2>
+        <h2>
+          <span id="spanLabel">Advanced:</span><br />
+          For experienced lifters, smaller increments of about 1-2% may be more
+          appropriate, as gains become harder to achieve and require more
+          careful management.<br />
+        </h2>
+      </div>
+    </div>
+
+
+<div id="results"></div>
+    
+    <div>
+
+    <select name="changeCalculator" id="calculatorOptions">
+      <option  id="changeOption" value="">--Change Calculator--</option>
+      <option value="Beginner">Progressive Overload</option>
+      <option  value="Intermediate">One Rep Max</option>
+      <option value="Advanced">Strength Level</option>
+    </select>
+</div>
+
+    <script src="poCalc.js"></script>
+  </body>
+</html>

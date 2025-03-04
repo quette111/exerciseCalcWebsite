@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Badeen+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Courgette&family=Fjalla+One&family=Fleur+De+Leah&family=Ga+Maamli&family=Itim&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Press+Start+2P&family=Sedgwick+Ave&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap');
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+  }
+body{
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(255, 242, 213, 0.685));
+
+}
+img{
+    loading: "eager" !important;
+}
+#floatingModel{
+    opacity: 0;
+    position: absolute;
+  left: -6.8%;
+}
+#deleteImg{
+   width: 4.6%;
+   height: 4%;
+    position: absolute;
+    top: 1%;
+    left: 60%;
+    background-color: transparent;
+    border: 0.1px solid gray;
+    color: gray;
+    font-size: 5%;
+    padding-bottom: 4.5%;
+    z-index: 100000;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0; /* Optional: Start invisible */
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1; /* Optional: Fade in */
+    }
+}
+
+#float{
+    position: absolute;
+    top: -0%;
+    left: 70%;
+ 
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0; /* Optional: Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Optional: Fade in */
+    }
+}
+
+.person{
+    transform: rotate(43deg);
+}
+.header{
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+   
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: white;
+}
+
+.innerHeader{
+    
+
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+  
+.button-33 {
+  background-color: rgb(252, 207, 111);
+  border-radius: 100px;
+  box-shadow: rgba(252, 207, 111, .2) 0 -25px 18px -14px inset,rgba(252, 207, 111, .15) 0 1px 2px,rgba(252, 207, 111, .15) 0 2px 4px,rgba(252, 207, 111, .15) 0 4px 8px,rgba(252, 207, 111, .15) 0 8px 16px,rgba(252, 207, 111, .15) 0 16px 32px;
+  color: white;
+  cursor: pointer;
+position: absolute;
+top: 31%;
+right: 0.4%;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+ 
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.bulb{
+    position: relative;
+    
+}
+.bulb1{
+    position: relative;
+    top: 20%;
+    left: 0%;
+}
+.button-33:hover {
+  box-shadow: rgba(252, 207, 111,.35) 0 -25px 18px -14px inset,rgba(252, 207, 111,.25) 0 1px 2px,rgba(252, 207, 111,.25) 0 2px 4px,rgba(252, 207, 111,.25) 0 4px 8px,rgba(252, 207, 111,.25) 0 8px 16px,rgba(252, 207, 111,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#homE{
+    color: rgb(250, 188, 53);
+   
+}
+
+.logoContainer{
+    
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logoContainer h1{
+    color: #101010;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.logoContainer h1 span{
+    font-weight: 800;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a:last-child{
+    padding-right: 0;
+}
+
+.navigation a li{
+
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+
+
+
+.imgContainer{
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 600px;
+}
+
+.imgContainer img{
+
+    display: block;
+    max-width: 100%;
+  width: 100%;
+  height: auto;
+ 
+}
+
+#overlay{
+    position: absolute;
+  top: 52%; 
+  
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-family: 'Montserrat';
+  color: rgb(255, 255, 255); 
+  padding: 10px 20px; 
+  font-size: 28px; 
+  text-align: center;
+  white-space: nowrap;
+}
+
+.headOfArticle{
+    background-color: rgba(255,236,194,1);
+   justify-content: center;
+  border-radius: 16px;
+ display: flex;
+  
+}
+
+.firstDropdownSection{
+    display: inline block;
+}
+.calc{
+    display: inline-block;
+}
+.headOfArticle button{
+    cursor: pointer;
+    height: 2.5vw;
+    width: 26vw;
+   text-align: center;
+   line-height: 30px;
+   background-color: rgba(255,236,194,1);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 2px solid rgba(170, 168, 168, 0.493);
+
+
+}
+.headOfArticle button:hover{
+    background: rgba(41, 41, 41, 0.26);
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.firstDropdownSection:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.firstDropdownSection:hover .calc {background: rgba(41, 41, 41, 0.26);color: white;;}
+
+.dropdownWrapper{
+   flex-direction: row;
+    display: flex;
+    justify-content: center;
+
+}
+
+.article{
+    text-indent: 50px;
+    margin: 10%;
+    padding-bottom: 0%;
+    padding: 5%;
+   margin-top: 1%;
+    background: rgb(249,249,249);
+background: linear-gradient(0deg, rgba(249,249,249,1) 0%, rgba(255,236,194,1) 100%);
+    letter-spacing: 3px;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+.learnMore{
+    text-align: center;
+   font-weight: 800;
+  font-family: "Courgette", serif; 
+    position: relative;
+padding-bottom: 2%;
+font-size: 45px;
+
+}
+
+
+.pOInfo{
+    font-size: 18px;
+    text-indent: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 3px; 
+    height: 1000px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: 1.5px solid black;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    padding: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.pOInfo:last-child{              
+    --mask: linear-gradient(to bottom, 
+    rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%, 
+    rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+) 100% 50% / 100% 100% repeat-x;
+mask: var(--mask);
+}
+
+.pOInfo h2{
+    padding-bottom: 1%;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.boldLess{
+    font-weight: 590;
+}
+
+.whatIs{
+    padding-bottom: 5%;
+}
+.section2{
+    padding-top: 5%;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	
+  display: inline-block;
+  position: relative;
+	width: 240px;
+	height: auto;
+    background-color: rgb(252, 207, 111);
+    text-align: center;
+    
+   
+}
+.border{
+  border: 1.5px solid rgb(0, 0, 0);
+}
+.round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+    border-color: rgba(0, 0, 0, 0) transparent transparent rgba(0, 0, 0, 0);
+    z-index: 100000;
+    
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+    border-color: rgb(252, 207, 111) transparent transparent rgb(252, 207, 111);
+   
+}
+
+.switch {
+    position: relative;
+    top: 40%;
+    
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/exerciseDB.css">
+    <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+        <div class="header">
+                <div class="innerHeader">
+                  <div class="logoContainer">
+                    <h1>LIFT<span>LOGIC</span></h1>
+                  </div>
+          
+                  <ul class="navigation">
+                        <a href="index.html"><li id="homE">Home</li></a>
+                        <a href="poCalc.html"><li>Calculators</li></a>
+                        <a href="exerciseDB.html"><li id="eDB">Exercise Database</li></a>
+                        <a href="gymCalc.html"><li>About</li></a>
+                    <a><li>Contact</li></a>
+                    <a><button class="button-33" role="button">Sign up</button></a>
+                  </ul>
+                </div>
+                
+              </div>
+          
+
+              
+
+              
+
+<select oninput="getData()" name="cars" id="cars">
+        <option >Choose Category</option>
+
+        <option value=1>Abdominals</option>
+        <option value=2>Abductors</option>
+        <option value=3>Biceps</option>
+        <option value=4>Chest</option>
+        <option value=5>Glutes</option>
+        <option value=6>Quadriceps</option>
+        <option value=7>Traps</option>
+        <option value=8>Triceps</option>
+</select>
+
+<div id="searchWrapper">
+    <input onkeyup="searchWorkout()" id="search" placeholder="search workouts">
+
+
+<h1 onload="showpageTitle()" id="pageTitle"><span id="exSlide">Exercise</span> <span id="dataBase">Database</span></h1>
+  
+    <ul hidden id="list"></ul>
+ </div>
+    <script src="js/exerciseDB.js"></script>
+</body>
+</html>

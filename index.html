@@ -19,17 +19,28 @@
                           </label>
                 <h1>LIFT<span>LOGIC</span></h1>
             </div>
-
+                <div onclick="removeSidebar()" hidden id="sidebarDiv">
+                    <ul class="sidebar">
+                            <a><li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li></a>
+                            <a href="index.html"><li id="homE">Home</li></a>
+                            <a href="poCalc.html"><li>Calculators</li></a>
+                            <a href="exerciseDB.html"><li>exercise.Database</li></a>
+                            <a href="gymCalc.html"><li>About</li></a>
+                            <a><li>Contact</li></a>
+                            <a><h3>Sign up</h3></a>
+                        </ul>
+                </div>
             <ul class="navigation">
-                <a href="index.html"><li id="homE">Home</li></a>
-                <a href="poCalc.html"><li>Calculators</li></a>
-                <a href="exerciseDB.html"><li>Exercise Database</li></a>
-                <a href="gymCalc.html"><li>About</li></a>
-                <a><li>Contact</li></a>
+                <a href="index.html"><li class="hideOnMobile" id="homE">Home</li></a>
+                <a href="poCalc.html"><li class="hideOnMobile">Calculators</li></a>
+                <a href="exerciseDB.html"><li class="hideOnMobile">exercise.Database</li></a>
+                <a href="gymCalc.html"><li class="hideOnMobile">About</li></a>
+                <a><li class="hideOnMobile">Contact</li></a>
+                <a><li class="openNav" onclick="openSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li></a>
                 <a><button class="button-33" role="button">Sign up</button></a>
             </ul>
         </div>
-        
+         
     </div>
 
     <div id="myLiftingImg" class="imgContainer">
@@ -56,7 +67,7 @@
 
     <div id="article" class="article">
         <h2>
-            Join the LiftLogic community and connect with like-minded lifters.<br> Share your progress, ask questions, and get advice from experienced athletes. Whether you're looking for tips on form, program recommendations, or motivation, our forum is the place to be.
+            Join the LiftLogic community <br> Connect with like-minded lifters.
         </h2>
     </div>
 

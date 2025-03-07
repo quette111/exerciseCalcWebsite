@@ -92,3 +92,12 @@ function darkMode() {
   myLiftingImg.style.cssText = "opacity: 0.75;";
 }
 
+
+function openSidebar(){
+document.getElementById('sidebarDiv').hidden = false;
+}
+
+function removeSidebar(){
+  document.getElementById('sidebarDiv').hidden = true;
+
+}

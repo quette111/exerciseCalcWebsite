@@ -7,8 +7,8 @@
         opacity: 0; /* Optional: Start invisible */
     }
     100% {
-        transform: translateX(0); /* End at the original position */
-        opacity: 0.80; /* Optional: Fade in */
+        transform: translateX(10); /* End at the original position */
+        opacity: 0.50; /* Optional: Fade in */
     }
 }
 @keyframes slide-in2 {
@@ -34,39 +34,25 @@
     margin-top: 2%;
 }
 
-#exSlide{
-  
-    font-family: "Nabla";
-    font-palette: --myPalette;
-    position: relative;
-    left: 10%;
-    animation-duration: 1.5s;
-    animation-name: slide-in1;
-}
+
 #pageTitle{
-   opacity: 0.80;
-    top: 500%;
+   opacity: 0.50;
+    top: 1700%;
+    
     position: absolute;
     right: 10%;
     font-weight: 100;
-    font-size: 700%;
+    font-size: 400%;
     font-family: "Nabla";
     font-palette: --myPalette;
     animation-duration: 1.5s;
     animation-name: slide-in1;
 
 }
-#dataBase{
-    font-family: "Nabla";
-    font-palette: --myPalette;
-    position: relative;
-    left: 50%;
-    animation-duration: 1.5s;
-    animation-name: slide-in2;
-}
+
 @font-palette-values --myPalette {
     font-family: "Nabla";
-    base-palette: 3;
+    base-palette: 1;
   }
 
 

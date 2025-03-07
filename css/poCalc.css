@@ -181,8 +181,14 @@ padding-right: 4%;
    
 }
 #spanLabel{
-   margin-left: 2%;
-   color: rgb(253, 144, 1);
+   text-align: center;
+   display: flex;
+   align-self: center;
+  padding: 5%;
+  background-color: #ffffff8a;
+  border-radius: 15%;
+margin: 2%;
+   color: rgb(255, 115, 0);
    font-weight: 900;
 }
 
@@ -274,6 +280,9 @@ label {
     transform: translate(0, 5%);
   }
 
+
+ 
+  
   @keyframes appear {
     0% {
         opacity: 0; /* Optional: Start invisible */
